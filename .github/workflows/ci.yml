@@ -13,7 +13,7 @@ jobs:
 
   test:
     name: Test
-    runs-on: windows
+    runs-on: ubuntu-latest
    
 
     services:
@@ -46,7 +46,7 @@ jobs:
        which migrate
 
     - name: Run migrations
-      run:  make migrateup  
+      run:  make migrateup
 
     - name: Build
       run: go build -v ./...
