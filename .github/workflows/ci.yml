@@ -12,11 +12,9 @@ on:
 jobs:
 
   test:
-  
     name: Test
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
+   
 
     services:
       # Label used to access the service container
@@ -34,7 +32,9 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+    steps:
 
+    
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
