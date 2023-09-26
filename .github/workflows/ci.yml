@@ -13,7 +13,7 @@ jobs:
 
   test:
     name: Test
-    runs-on: windows-10
+    runs-on: windows-latest
    
 
     services:
